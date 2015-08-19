@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @condition.user_id %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @condition.comment %>
+</p>
+
+<p>
+  <strong>Trace at:</strong>
+  <%= @condition.trace_at %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @condition.status %>
+</p>
+
+<p>
+  <strong>Delete flag:</strong>
+  <%= @condition.delete_flag %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @condition.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @condition.updated_at %>
+</p>
+
+<%= link_to 'Edit', edit_condition_path(@condition) %> |
+<%= link_to 'Back', conditions_path %>
